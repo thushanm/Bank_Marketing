@@ -1,0 +1,5 @@
+plt.figure(figsize=(8,6))
+sns.histplot(data['age'], bins=20, kde=True)
+plt.title('Age Histogram')
+plt.savefig('../visualizations/histograms/age_histogram.png')
+plt.show()

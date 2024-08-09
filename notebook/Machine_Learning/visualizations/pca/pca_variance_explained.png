@@ -1,0 +1,7 @@
+plt.figure(figsize=(8,6))
+plt.plot(np.cumsum(pca.explained_variance_ratio_))
+plt.xlabel('Number of Components')
+plt.ylabel('Variance Explained')
+plt.title('PCA Variance Explained')
+plt.savefig('../visualizations/pca/pca_variance_explained.png')
+plt.show()

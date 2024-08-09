@@ -1,0 +1,8 @@
+import scipy.stats as stats
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8,6))
+stats.probplot(data['age'], dist="norm", plot=plt)
+plt.title('Q-Q Plot for Age')
+plt.savefig('../visualizations/qq_plots/age_qq_plot.png')
+plt.show()
